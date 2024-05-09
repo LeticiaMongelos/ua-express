@@ -94,7 +94,7 @@
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="panelRound1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="140" max="32767" attributes="0"/>
+                          <EmptySpace pref="94" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -114,13 +114,28 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="txtidCliente" min="-2" pref="115" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="botonGuardar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="botonCancelar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jTextLabel7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jTextLabel11" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="txtCiudad" min="-2" pref="360" max="-2" attributes="0"/>
+                                      <Component id="txtEmail1" min="-2" pref="360" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jTextLabel8" min="-2" max="-2" attributes="0"/>
@@ -139,28 +154,6 @@
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jTextLabel6" min="-2" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jTextLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jTextLabel5" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="txtDireccion" pref="360" max="32767" attributes="0"/>
-                                                          <Component id="txtNumeroDocumento" pref="360" max="32767" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                                      <Component id="departamento" max="32767" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" alignment="1" attributes="0">
@@ -178,7 +171,22 @@
                                               <Group type="103" groupAlignment="1" attributes="0">
                                                   <Component id="txtApellido" min="-2" pref="360" max="-2" attributes="0"/>
                                                   <Component id="txtNombre" min="-2" pref="360" max="-2" attributes="0"/>
-                                                  <Component id="tipoDocumento" min="-2" pref="360" max="-2" attributes="0"/>
+                                                  <Component id="txtApellido1" min="-2" pref="360" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jTextLabel6" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jTextLabel5" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jTextLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jTextLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtDireccion" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="txtNumeroDocumento" alignment="1" pref="360" max="32767" attributes="0"/>
+                                                  <Component id="txtDireccion1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="jComboBox1" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -186,21 +194,6 @@
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="txtidCliente" min="-2" pref="115" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="botonGuardar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="botonCancelar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -223,33 +216,30 @@
                                   <Component id="jTextLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="tipoDocumento" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="jTextLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtNumeroDocumento" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtApellido1" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtNumeroDocumento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="txtDireccion" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextLabel5" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="txtDireccion1" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextLabel6" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="departamento" min="-2" pref="28" max="-2" attributes="0"/>
-                                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                                  </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtCiudad" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextLabel7" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -258,15 +248,20 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtTelefonoAdicional" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextLabel9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTelefonoAdicional" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="txtEmail" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextLabel10" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="19" max="32767" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="txtEmail1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextLabel11" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="28" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="botonGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="botonCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -289,7 +284,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Nombre"/>
+                        <Property name="text" type="java.lang.String" value="Fecha"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtNombre">
@@ -307,7 +302,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Apellido"/>
+                        <Property name="text" type="java.lang.String" value="Hora"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtApellido">
@@ -325,7 +320,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Tipo de documento"/>
+                        <Property name="text" type="java.lang.String" value="Ciudad de origen"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jTextLabel4">
@@ -333,7 +328,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="N&#xfa;mero de documento"/>
+                        <Property name="text" type="java.lang.String" value="Ciudad destino"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtNumeroDocumento">
@@ -348,7 +343,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Peso"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtDireccion">
@@ -363,7 +358,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Departamento"/>
+                        <Property name="text" type="java.lang.String" value="Dimensiones"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jTextLabel7">
@@ -371,14 +366,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Ciudad"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="txtCiudad">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="15" style="0"/>
-                        </Property>
+                        <Property name="text" type="java.lang.String" value="Estado"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jTextLabel8">
@@ -386,7 +374,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                        <Property name="text" type="java.lang.String" value="Precio"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtTelefono">
@@ -401,7 +389,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Tel&#xe9;fono adicional"/>
+                        <Property name="text" type="java.lang.String" value="Tipo de env&#xed;o"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtTelefonoAdicional">
@@ -416,7 +404,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="16" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Email"/>
+                        <Property name="text" type="java.lang.String" value="Cliente"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtEmail">
@@ -474,12 +462,28 @@
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonCancelarActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="tipoDocumento">
+                    <Component class="javax.swing.JTextField" name="txtApellido1">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="15" style="0"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellido1ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtDireccion1">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="15" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="jComboBox1">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="2">
-                            <StringItem index="0" value="C&#xe9;dula de identidad"/>
-                            <StringItem index="1" value="RUC"/>
+                          <StringArray count="1">
+                            <StringItem index="0" value="Pendiente"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -487,32 +491,20 @@
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="departamento">
+                    <Component class="javax.swing.JLabel" name="jTextLabel11">
                       <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="16">
-                            <StringItem index="0" value="Alto Paraguay"/>
-                            <StringItem index="1" value="Alto Paran&#xe1;"/>
-                            <StringItem index="2" value="Amambay"/>
-                            <StringItem index="3" value="Boquer&#xf3;n"/>
-                            <StringItem index="4" value="Caaguaz&#xfa;"/>
-                            <StringItem index="5" value="Canindey&#xfa;"/>
-                            <StringItem index="6" value="Central"/>
-                            <StringItem index="7" value="Concepci&#xf3;n"/>
-                            <StringItem index="8" value="Cordillera"/>
-                            <StringItem index="9" value="Guair&#xe1;"/>
-                            <StringItem index="10" value="Itap&#xfa;a"/>
-                            <StringItem index="11" value="Misiones"/>
-                            <StringItem index="12" value="&#xd1;eembuc&#xfa;"/>
-                            <StringItem index="13" value="Paraguar&#xed;"/>
-                            <StringItem index="14" value="Presidente Hayes"/>
-                            <StringItem index="15" value="San Pedro"/>
-                          </StringArray>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="16" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Transportista"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtEmail1">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="15" style="0"/>
                         </Property>
                       </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -524,7 +516,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Crear cliente"/>
+                    <Property name="text" type="java.lang.String" value="Nuevo env&#xed;o"/>
                   </Properties>
                 </Component>
               </SubComponents>
