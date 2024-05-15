@@ -53,17 +53,18 @@ public class ListaClientes extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        botonInicio = new javax.swing.JButton();
+        botonClientes = new javax.swing.JButton();
+        botonDestinatarios = new javax.swing.JButton();
+        botonEnvios = new javax.swing.JButton();
+        botonEmpleados = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         usuarioLog = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         background.setBackground(new java.awt.Color(204, 204, 204));
+        background.setPreferredSize(new java.awt.Dimension(1366, 768));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane2.setBorder(null);
@@ -103,6 +104,7 @@ public class ListaClientes extends javax.swing.JFrame {
         botonCrearCliente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         botonCrearCliente.setForeground(new java.awt.Color(255, 255, 255));
         botonCrearCliente.setText("Crear cliente");
+        botonCrearCliente.setBorderPainted(false);
         botonCrearCliente.setMargin(new java.awt.Insets(8, 14, 8, 14));
         botonCrearCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +116,7 @@ public class ListaClientes extends javax.swing.JFrame {
         botonEditarCliente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         botonEditarCliente.setForeground(new java.awt.Color(255, 255, 255));
         botonEditarCliente.setText("Editar");
+        botonEditarCliente.setBorderPainted(false);
         botonEditarCliente.setMargin(new java.awt.Insets(8, 14, 8, 14));
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
@@ -134,28 +137,28 @@ public class ListaClientes extends javax.swing.JFrame {
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
                 .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelRound1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(botonBuscar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
-                        .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 778, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
-                                    .addComponent(botonCrearCliente)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(botonEditarCliente))
-                                .addGroup(panelRound1Layout.createSequentialGroup()
-                                    .addGap(399, 399, 399)
-                                    .addComponent(botonBuscar)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(33, 33, 33))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
-                        .addComponent(label_total_registros)
-                        .addGap(76, 76, 76))))
+                        .addGap(0, 24, Short.MAX_VALUE)
+                        .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
+                                .addComponent(botonCrearCliente)
+                                .addGap(18, 18, 18)
+                                .addComponent(botonEditarCliente))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 888, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(27, 27, 27))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(label_total_registros)
+                .addGap(76, 76, 76))
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,83 +189,90 @@ public class ListaClientes extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(308, Short.MAX_VALUE))
+                    .addComponent(jLabel1)
+                    .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(24, 24, 24)
                 .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(162, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
 
-        background.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 900, 610));
+        background.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 1050, 720));
 
         jPanel2.setBackground(new java.awt.Color(76, 76, 143));
+        jPanel2.setPreferredSize(new java.awt.Dimension(320, 770));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/imagenes/logo_blanco.jpg"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(76, 76, 143));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Clientes");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusPainted(false);
+        botonInicio.setBackground(new java.awt.Color(76, 76, 143));
+        botonInicio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        botonInicio.setForeground(new java.awt.Color(255, 255, 255));
+        botonInicio.setText("Inicio");
+        botonInicio.setBorder(null);
+        botonInicio.setBorderPainted(false);
+        botonInicio.setContentAreaFilled(false);
+        botonInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonInicio.setFocusPainted(false);
+        botonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonInicioActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(76, 76, 143));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Destinatarios");
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusPainted(false);
+        botonClientes.setBackground(new java.awt.Color(76, 76, 143));
+        botonClientes.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        botonClientes.setForeground(new java.awt.Color(255, 255, 255));
+        botonClientes.setText("Clientes");
+        botonClientes.setBorder(null);
+        botonClientes.setBorderPainted(false);
+        botonClientes.setContentAreaFilled(false);
+        botonClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonClientes.setFocusPainted(false);
 
-        jButton3.setBackground(new java.awt.Color(76, 76, 143));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Envios");
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setFocusPainted(false);
+        botonDestinatarios.setBackground(new java.awt.Color(76, 76, 143));
+        botonDestinatarios.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        botonDestinatarios.setForeground(new java.awt.Color(255, 255, 255));
+        botonDestinatarios.setText("Destinatarios");
+        botonDestinatarios.setBorder(null);
+        botonDestinatarios.setBorderPainted(false);
+        botonDestinatarios.setContentAreaFilled(false);
+        botonDestinatarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonDestinatarios.setFocusPainted(false);
 
-        jButton4.setBackground(new java.awt.Color(76, 76, 143));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Empleados");
-        jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setFocusPainted(false);
+        botonEnvios.setBackground(new java.awt.Color(76, 76, 143));
+        botonEnvios.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        botonEnvios.setForeground(new java.awt.Color(255, 255, 255));
+        botonEnvios.setText("Envios");
+        botonEnvios.setBorder(null);
+        botonEnvios.setBorderPainted(false);
+        botonEnvios.setContentAreaFilled(false);
+        botonEnvios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonEnvios.setFocusPainted(false);
+        botonEnvios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonEnviosActionPerformed(evt);
+            }
+        });
 
-        jButton5.setBackground(new java.awt.Color(76, 76, 143));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/imagenes/iconos/settings.png"))); // NOI18N
-        jButton5.setText("Ajustes");
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setFocusPainted(false);
+        botonEmpleados.setBackground(new java.awt.Color(76, 76, 143));
+        botonEmpleados.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        botonEmpleados.setForeground(new java.awt.Color(255, 255, 255));
+        botonEmpleados.setText("Empleados");
+        botonEmpleados.setBorder(null);
+        botonEmpleados.setBorderPainted(false);
+        botonEmpleados.setContentAreaFilled(false);
+        botonEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonEmpleados.setFocusPainted(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -271,37 +281,37 @@ public class ListaClientes extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
+                        .addGap(60, 60, 60)
                         .addComponent(jLabel2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4)
-                            .addComponent(jButton5))))
-                .addContainerGap(37, Short.MAX_VALUE))
+                            .addComponent(botonClientes)
+                            .addComponent(botonInicio)
+                            .addComponent(botonDestinatarios)
+                            .addComponent(botonEnvios)
+                            .addComponent(botonEmpleados))))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(79, 79, 79)
                 .addComponent(jLabel2)
-                .addGap(42, 42, 42)
-                .addComponent(jButton1)
+                .addGap(100, 100, 100)
+                .addComponent(botonInicio)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(botonClientes)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(botonDestinatarios)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 293, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addGap(27, 27, 27))
+                .addComponent(botonEnvios)
+                .addGap(18, 18, 18)
+                .addComponent(botonEmpleados)
+                .addContainerGap(312, Short.MAX_VALUE))
         );
 
-        background.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 660));
+        background.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 770));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -329,7 +339,7 @@ public class ListaClientes extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        background.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 900, 50));
+        background.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 1050, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -357,6 +367,16 @@ public class ListaClientes extends javax.swing.JFrame {
     private void botonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBuscarActionPerformed
         mostrar(txtBuscar.getText());
     }//GEN-LAST:event_botonBuscarActionPerformed
+
+    private void botonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonInicioActionPerformed
+
+    private void botonEnviosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEnviosActionPerformed
+        ListaEnvios nuevo = new ListaEnvios();
+        nuevo.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_botonEnviosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -459,13 +479,13 @@ public class ListaClientes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
     private javax.swing.JButton botonBuscar;
+    private javax.swing.JButton botonClientes;
     private javax.swing.JButton botonCrearCliente;
+    private javax.swing.JButton botonDestinatarios;
     private javax.swing.JButton botonEditarCliente;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton botonEmpleados;
+    private javax.swing.JButton botonEnvios;
+    private javax.swing.JButton botonInicio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
